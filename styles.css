@@ -1,0 +1,4496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Manrope:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center;
+ }
+.attribution a { color: hsl(228, 45%, 44%);
+ }
+ :root{
+--Softorange: hsl(35, 77%, 62%);
+--Softred: hsl(5, 85%, 63%);
+--Off-white: hsl(36, 100%, 99%);
+--Grayishblue: hsl(233, 8%, 79%);
+--Darkgrayishblue: hsl(236, 13%, 42%);
+--Verydarkblue: hsl(240, 100%, 5%);
+ }
+html{
+    font-size: 62.5%;
+}
+body{
+background-color: hsl(36, 100%, 99%);
+height: 100%;
+width:100% ;
+list-style: none;
+text-decoration: none;
+overflow-x:hidden ;
+ }
+.container{
+    width:80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.nav > a{
+    margin-right: 40px;
+    color:hsl(236, 13%, 42%);
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+}
+.nav > a:last-child{
+    margin-right: 0;
+}
+.nav > a:hover{
+    color:hsl(5, 85%, 63%);
+}
+.logo{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+    @media screen and (min-width:760px) {
+        .mob-menu{
+            display: none;
+        }
+    }
+    @media screen and (min-width:500px) and (max-width:601px) {
+        .mob-list{
+            height: 100%;
+            width: 35%;
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 2rem;
+            justify-content: center;
+            gap: 30px;
+            background-color:hsl(233, 8%, 79%);
+        
+        }
+        .container{
+            overflow-x: hidden;
+        }
+        .header,
+        .header-background{
+            display: none;
+        }
+      .logo-wrapper{
+        display: block;
+      }
+      body{
+        background-color: hsl(233, 8%, 79%);
+      }
+    
+      .logo{
+        margin-left: 2rem;
+        padding-top: 4rem;
+        position: fixed;
+        top: -2rem;
+        left: 2rem;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: column;
+      }
+      .image{
+        width: 50%;
+      }
+      .div-1{
+        width: 50%;
+        height: 50%;
+      }
+    .div-2{
+        width: 50%;
+        height: 50%;
+    }
+   
+    
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:84%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 84%;
+    }
+    .container{
+        overflow-x: hidden;
+    }
+    .mob-list{
+        height: 100%;
+        width: 58%;
+        position: fixed;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+        justify-content: center;
+        gap: 30px;
+        background-color:hsl(36, 100%, 99%);
+        padding-top: -1rem;
+    
+    }
+    .mob-list-item{
+        color: hsl(240, 100%, 5%);
+        font-size: 2rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    .mob-open{
+        position: fixed;
+        right: 30px;
+        top: 15px;
+        z-index: 5;
+    }
+    h3{
+        font-size: 1rem;
+    color: hsl(35, 77%, 62%);
+        padding-top: 3rem;
+        padding-left: 2rem;
+    }
+    .hydrogen{
+        font-size: 0rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 1.6rem;
+        font-size: 2rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.7em;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        line-height:2.8rem ;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding-bottom: 3rem;
+    }
+      
+}
+.opened{
+    opacity: 1;
+    animation: openAnim 200ms ease-in-out;
+}
+.close{
+    opacity:0 ;
+    animation: closeAnim 200ms ease-in-out;
+}
+   
+    
+/* animation  */
+
+@keyframes openAnim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes closeAnim {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+        
+    
+    
+    @media screen and (max-width:501px) {
+        .mob-list{
+            height: 100%;
+            width: 35%;
+            position: fixed;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 2rem;
+            justify-content: center;
+            gap: 30px;
+            background-color:hsl(233, 8%, 79%);
+        
+        }
+    
+        .header,
+        .header-background{
+            display: none;
+        }
+      .logo-wrapper{
+        display: block;
+      }
+      body{
+        background-color: hsl(233, 8%, 79%);
+      }
+    
+      .logo{
+        margin-left: 1rem;
+        padding-top: 4rem;
+        position: absolute;
+        top: -2rem;
+        left:3rem;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: column;
+      }
+      .image{
+        width: 39.5rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 5rem;
+      }
+      .div-1{
+        width: 50%;
+        height: 60%;
+      }
+    .div-2{
+        width: 50%;
+        height: 40%;
+    }
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+    }
+    .how{
+        margin-left: -4rem;
+    }
+    .ther{
+        margin-left: -4rem;
+    }
+    .numberss{
+        margin-left: -4rem;
+    }
+    .mob-list{
+        height: 100%;
+        width: 58%;
+        position: fixed;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+        justify-content: flex-start;
+        gap: 35px;
+        background-color:hsl(36, 100%, 99%);
+        padding-top: 14rem;
+    
+    }
+    .mob-list-item{
+        color: hsl(240, 100%, 5%);
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+    }
+    .mob-open{
+        position: fixed;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+    }
+  
+    h1{
+        margin-left: 6rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color:hsl(240, 100%, 5%);
+    }
+    h2{
+        margin-left: 6rem;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+       width: 31rem;
+        height: 20%;
+        color: hsl(236, 13%, 42%);
+        line-height: 2rem;
+    }
+    .button-div{
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+    button{
+        font-size: 2rem;
+        padding: 1.5rem;
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        color: hsl(36, 100%, 99%);
+        letter-spacing: 0.3rem;
+    }
+    button:hover{
+        background-color: hsl(240, 100%, 5%);
+        transition: all 0.3s;
+    }
+      .box-1{
+        width: max-content;
+        height: 60%;
+        background-color: hsl(240, 100%, 5%);
+        margin-top: 5rem;
+        margin-left: 5rem;
+      }  
+    
+    h3{
+        font-size: 3.5rem;
+    color: hsl(35, 77%, 62%);
+        padding-top: 3rem;
+        padding-left: 2rem;
+    }
+    .hydrogen{
+        font-size: 2.8rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 2.2rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+        padding-right: 2.2rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.8rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 2.2rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        line-height:2.8rem ;
+        padding-right: 2.2rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.8rem;
+        font-weight: bold;
+        padding-right: 2.2rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding-bottom: 3rem;
+        padding-right: 2.2rem;
+    }
+    .flexar-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 7rem;
+        margin-left: 6rem;
+       
+    }
+    .div-10{
+        width: 40%;
+        height: 30%;
+    
+    }
+    .number{
+        font-size: 6rem;
+        color: hsl(236, 13%, 42%);
+        margin-right: 1rem;
+    }
+    .div-9{
+        width: 60%;
+        height: 30%;
+        margin-right:5rem ;
+    }
+    .imager{
+        height: 18rem;
+    }
+    .reviving{
+        font-size: 2.2rem;
+        padding-top: 1.5rem;
+        font-weight: 700;
+        color: hsl(240, 100%, 5%);
+        font-weight: 700;
+    }
+    .happens{
+        font-size: 1.6rem;
+        padding-top: 1.7rem;
+        line-height: 2.6rem;
+        color: hsl(236, 13%, 42%);
+    }
+    .flexarr-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 5rem;
+        margin-left: 6rem;
+    }
+    .div-12{
+        width: 40%;
+        height: 30%;
+        margin-right: -3rem;
+    }
+    .numbers{
+        font-size: 6rem;
+        color:hsl(236, 13%, 42%);
+        margin-right: -2rem;
+    }
+    .top{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        font-weight: 700;
+        color: hsl(240, 100%, 5%);
+        font-weight: 700;
+    }
+    .our{
+            font-size: 2rem;
+            padding-top: 1.8rem;
+            line-height: 2.6rem;
+            color: hsl(236, 13%, 42%);
+        }
+        .flexarrr-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-left: 6rem;
+        }
+        .div-14{
+            width: 40%;
+            height: 30%;
+            margin-right: 1rem;
+        }
+        .numberss{
+            font-size: 6rem;
+            color: hsl(236, 13%, 42%);
+        }
+        .ther{
+            font-size: 2rem;
+            padding-top: 1.5rem;
+            font-weight: 700;
+            font-weight: 700;
+            color: hsl(240, 100%, 5%);
+        }
+        .how{
+            font-size: 1.8rem;
+            padding-top: 1.8rem;
+            line-height: 2.6rem;
+            color: hsl(236, 13%, 42%);
+            padding-bottom: 7rem;
+    
+        }
+    }
+    @media screen and (max-width:500px) {
+        .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:83%
+        }
+        .mob-open{
+            width: 30px;
+            height: 30px;
+            left: 83%;
+        }
+        
+    }
+    @media screen and (max-width:488px) {
+        .image{
+            width: 38rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 5rem;
+          }
+        
+    }
+    @media screen and (max-width:472px) {
+        .numbers{
+            margin-left: 2rem;
+        }
+        .top{
+            margin-left: 2rem;
+        }
+        .our{
+            margin-left: 2rem;
+        }
+        .image{
+            width: 37rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 5rem;
+          }
+         .container{
+            overflow: hidden;
+         }
+          .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:83%
+        }
+        .mob-open{
+            width: 30px;
+            height: 30px;
+            left: 83%;
+        }
+        .box-1{
+            margin-left: 2rem;
+        }
+        .hydrogen{
+            font-size: 2.4rem;
+            color:hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            font-weight: 700;
+            padding-right: 2.2rem;
+        }
+        .will{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.8rem;
+            padding-right: 2rem;
+            line-height: 3rem;
+            padding-right: 2.2rem;
+        }
+        aside{
+            border-bottom: 1px solid hsl(233, 8%, 79%);
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .the{
+            color: hsl(36, 100%, 99%);
+            font-size: 2.4rem;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            font-weight: 700;
+            padding-right: 2.2rem;
+        }
+        .what{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.6rem;
+            line-height:2.8rem ;
+            padding-right: 2.2rem;
+        }
+        .is{
+            color: hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 2.r8em;
+            font-weight: bold;
+            padding-right: 2.2rem;
+        }
+        .private{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            padding-bottom: 3rem;
+            padding-right: 2.2rem;
+        }
+        .number{
+            font-size: 2.5rem;
+        }
+        .numbers{
+            font-size: 2.5rem;
+        }
+        .numberss{
+            font-size: 2.5rem;
+        }
+        .reviving{
+            font-size: 2rem;
+        }
+        .top{
+            font-size: 1.8rem;
+        }
+        .ther{
+            font-size: 1.8rem;
+        }
+        .flexar-container{
+         
+            margin-left: 4rem;
+        }
+        .flexarr-container{
+            margin-left: 4rem;
+        }
+        .flexarrr-container{
+            margin-left: 4rem;
+        }
+    }
+    @media screen and (max-width:464px) {
+        .logo{
+            margin-left:-0.1rem;
+        }
+        .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:84%
+        }
+        .mob-open{
+            width: 30px;
+            height: 30px;
+            left: 84%;
+        }
+        h3{
+            font-size: 3.2rem;
+        color: hsl(35, 77%, 62%);
+            padding-top: 3rem;
+            padding-left: 2rem;
+        }
+        
+    }
+    @media screen and (max-width:461px) {
+        .image{
+            width: 36rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 5rem;
+          }
+          .how{
+            font-size: 1.6rem;
+          }
+          .our{
+            font-size: 1.6rem;
+          }
+          .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:82%
+        }
+        .mob-open{
+            width: 30px;
+            height: 30px;
+            left: 82%;
+        }
+        .hydrogen{
+            font-size: 2.2rem;
+            color:hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            font-weight: 700;
+            padding-right: 2.2rem;
+        }
+        .will{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.8rem;
+            padding-right: 2rem;
+            line-height: 3rem;
+            padding-right: 2.2rem;
+        }
+        aside{
+            border-bottom: 1px solid hsl(233, 8%, 79%);
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .the{
+            color: hsl(36, 100%, 99%);
+            font-size: 2.2rem;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            font-weight: 700;
+            padding-right: 2.2rem;
+        }
+        .what{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.6rem;
+            line-height:2.8rem ;
+            padding-right: 2.2rem;
+        }
+        .is{
+            color: hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 2.4rem;
+            font-weight: bold;
+            padding-right: 2.2rem;
+        }
+        .private{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            padding-bottom: 3rem;
+            padding-right: 2.2rem;
+        }
+    }
+        @media screen and (max-width:451px) {
+            .our{
+                margin-left: -1rem;
+            }
+            .top{
+                margin-left: -1rem;
+            }
+            .numbers{
+                margin-left: -1rem;
+            }
+            
+        }
+    @media screen and (max-width:436px) {
+        .image{
+            width: 35rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 4rem;
+          }
+.logo{
+    margin-left: -2rem;
+}
+.mob-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 19px;
+    left:81%
+}
+.mob-open{
+    width: 30px;
+    height: 30px;
+    left: 81%
+}
+h1{
+    margin-left: 4rem;
+}
+        
+    }
+@media screen and (max-width:428px) {
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:84%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 84%
+    }
+    .box-1{
+        margin-left: 8rem;
+    }
+    .hydrogen{
+        font-size: 2rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 2.2rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.7rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+        padding-right: 2.2rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 2.2rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.7rem;
+        line-height:2.8rem ;
+        padding-right: 2.2rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.1rem;
+        font-weight: bold;
+        padding-right: 2.2rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding-bottom: 3rem;
+        padding-right: 2.2rem;
+    }
+
+    
+}
+@media screen  and (max-width:424px){
+    .how{
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (max-width:422px) {
+    .image{
+        width: 34rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 4rem;
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:83%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 83%
+    }
+    .hydrogen{
+        font-size: 2rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 2.2rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+        padding-right: 2.2rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 1.9rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 2.2rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        line-height:2.8rem ;
+        padding-right: 2.2rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.9rem;
+        font-weight: bold;
+        padding-right: 2.2rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        padding-bottom: 3rem;
+        padding-right: 2.2rem;
+    }
+    .number{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:415px) {
+    .image{
+        width: 33rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 4rem;
+      }
+.happens{
+    font-size: 1.4rem;
+}
+.hydrogen{
+    font-size: 1.8rem;
+    color:hsl(36, 100%, 99%);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    font-weight: 700;
+    padding-right: 2rem;
+}
+.will{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    line-height: 3rem;
+    padding-right: 2rem;
+}
+aside{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.the{
+    color: hsl(36, 100%, 99%);
+    font-size: 1.7rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-weight: 700;
+    padding-right: 2rem;
+}
+.what{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    line-height:2.8rem ;
+    padding-right: 2rem;
+}
+.is{
+    color: hsl(36, 100%, 99%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-right: 2rem;
+}
+.private{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+}
+
+.how{
+    font-size: 1.4rem;
+}
+.imager{
+    height: 10rem;
+}
+ 
+.private{
+    padding-right: 2rem;
+}
+}
+@media screen and (max-width:413px) {
+    .image{
+        width: 33rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 4rem;
+      }
+
+    
+}
+@media screen and (max-width:460px) {
+   
+    .logo{
+        margin-left: 1rem;
+    }
+    
+}
+@media screen and (max-width:412px) {
+    .image{
+        width: 33.4rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 4rem;
+      }
+
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:83%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 83%
+
+}
+.box-1{
+    margin-right: 2rem;
+}
+.hydrogen{
+    font-size: 1.7rem;
+    color:hsl(36, 100%, 99%);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    font-weight: 700;
+    padding-right: 2.2rem;
+}
+.will{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    line-height: 3rem;
+    padding-right: 2.2rem;
+}
+aside{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.the{
+    color: hsl(36, 100%, 99%);
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-weight: 700;
+    padding-right: 2.2rem;
+}
+.what{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    line-height:2.8rem ;
+    padding-right: 2.2rem;
+}
+.is{
+    color: hsl(36, 100%, 99%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 2.2rem;
+}
+.private{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    padding-bottom: 3rem;
+    padding-right: 2.2rem;
+}.happens{
+    font-size: 1.3rem;
+}
+}
+@media screen  and (max-width:411px){
+
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:86%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 86%
+}
+.box-1{
+    margin-left: 7rem;
+}
+.flexar-container{
+    margin-left: 6rem;
+}
+}
+@media screen and (max-width:401px) {
+    .box-1{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width:394px) {
+    .image{
+        width: 33rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 4rem;
+      }
+
+    
+} 
+    
+    @media screen and (max-width:490px) {
+        h1{
+            font-size:2.8rem;
+        }
+        
+          .box-1{
+            margin-left: 4rem;
+          }
+          h1{
+            margin-left: 5rem;
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-weight: 700;
+            color:hsl(240, 100%, 5%);
+        }
+        h2{
+            margin-left: 5rem;
+            margin-top: 2rem;
+            font-size: 1.6rem;
+           width: 31rem;
+            height: 20%;
+            color: hsl(236, 13%, 42%);
+            line-height: 3rem;
+        } 
+        .button-div{
+            margin-top: 3rem;
+            margin-left: 5rem;
+        }
+        
+    }
+    @media screen and (max-width:478px) {
+        button{
+            font-size: 1.8rem;
+        }
+        
+          
+          h1{
+            margin-left:5rem;
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:hsl(240, 100%, 5%);
+            line-height: 3.5rem;
+        }
+        h2{
+            margin-left: 5rem;
+            margin-top: 2rem;
+            font-size: 1.8rem;
+           width: 31rem;
+            height: 20%;
+            color:hsl(236, 13%, 42%);
+            line-height: 3rem;
+        }
+    }
+    @media screen and (max-width:468px) {
+        
+        
+          h1{
+            font-size:2.5rem;
+          }
+          h1{
+            margin-left: 4rem;
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-weight: 700;
+            color:hsl(240, 100%, 5%);
+            line-height: 4rem;
+        }
+        h2{
+            margin-left: 4rem;
+            margin-top: 2rem;
+            font-size: 1.6rem;
+           width: 31rem;
+            height: 20%;
+            color: hsl(236, 13%, 42%);
+            line-height: 2.5rem;
+        }
+        .button-div{
+            margin-top: 3rem;
+            margin-left: 4rem;
+        }
+        
+    }
+   
+    
+    @media screen and (max-width:450px) {
+       
+          h1{
+            margin-left: 3.5rem;
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:hsl(240, 100%, 5%);
+            line-height: 4rem;
+        }
+        h2{
+            margin-left: 3.5rem;
+            margin-top: 2rem;
+            font-size: 1.6rem;
+           width: 31rem;
+            height: 20%;
+            color: hsl(236, 13%, 42%);
+            line-height: 2.5rem;
+        }
+        .button-div{
+            margin-top: 3rem;
+            margin-left: 4rem;
+        }
+        
+        
+          h1{
+        line-height: 3rem;
+          }
+          button{
+            font-size: 1.7rem;
+          }
+        
+        .div-9{
+            width: 60%;
+            height: 30%;
+            margin-right:5rem ;
+        }
+        .imager{
+            height: 14rem;
+        }
+      
+        .flexarr-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-left: 6rem;
+        }
+        .div-12{
+            width: 40%;
+            height: 30%;
+            margin-right: -1rem;
+        }
+     
+            .flexarrr-container{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                margin-top: 5rem;
+                margin-left: 6rem;
+            }
+            .div-14{
+                width: 40%;
+                height: 30%;
+                margin-right:1rem;
+            }
+            
+            
+            h1{
+            padding-right: -4rem;
+            }
+    }
+    
+    
+    
+    @media screen and (max-width:440px) {
+        button{
+            font-size: 1.4rem;
+        }
+        .flexar-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 7rem;
+            margin-left: 4rem;
+           
+        }
+        .flexarrr-container{
+            margin-left: 4rem;
+        }
+        .flexarr-container{
+            margin-left: 4rem;
+        }
+        
+    }
+    @media screen and (max-width:439px) {
+        .image{
+            width: 38.7rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.4rem;
+        }
+        .logo{
+            margin-left: -1rem;
+            padding-top: 4rem;
+            position: absolute;
+            top: -2rem;
+            left:3rem;
+          }
+          .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:87%
+        }
+        .mob-open{
+            width: 30px;
+            height: 30px;
+            left: 87%
+    }
+    .box-1{
+        margin-left: 3rem;
+    }
+    .happens{
+        font-size: 1.2rem;
+    }
+    .numberss{
+        margin-left: -2rem;
+    }
+    .how{
+        margin-left: -2rem;
+    }
+    .ther{
+        margin-left: -2rem;
+    }
+        
+    }
+    @media screen and (max-width:431px) {
+        .image{
+            width: 38rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.4rem;
+        }
+        .box-1{
+            margin-left: 2.6rem;
+        }
+        
+    }
+    @media screen and (max-width:429px) {
+        .box-1{
+            margin-left: 3.9rem;
+        }
+        
+    }
+    @media screen and (max-width:428px) {
+        h1{
+            font-size: 2.3rem;
+        }
+       
+        .reviving{
+            font-size: 1.7rem;
+        }
+        .logo{
+            margin-left: -1rem;
+            padding-top: 4rem;
+            position: absolute;
+            top: -2rem;
+            left:4rem;
+       
+    }
+
+}
+@media screen  and (max-width:425px){
+    .image{
+        width: 37.5rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 2.4rem;
+    }
+}
+    
+@media screen and (max-width:423px) {
+    .image{
+        width: 37rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 2.4rem;
+    }
+    .box-1{
+        margin-left: 3.5rem;
+    }
+    
+}
+   
+    @media screen and (max-width:415px) {
+        .image{
+            width: 36.5rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.4rem;
+        }
+        .box-1{
+            margin-left: 3.8rem;
+        }
+        
+       
+          .how{
+            font-size: 1.4rem;
+          }
+          .logo{
+            margin-left: -2rem;
+            padding-top: 4rem;
+            position: absolute;
+            top: -2rem;
+            left:4rem;
+          }
+          .hydrogen{
+            font-size: 2rem;
+            color:hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            font-weight: 700;
+            padding-right: 2rem;
+        }
+        .will{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.7rem;
+            padding-right: 2rem;
+            line-height: 3rem;
+            padding-right: 2rem;
+        }
+        aside{
+            border-bottom: 1px solid hsl(233, 8%, 79%);
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .the{
+            color: hsl(36, 100%, 99%);
+            font-size: 1.7rem;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            font-weight: 700;
+            padding-right: 2rem;
+        }
+        .what{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.7rem;
+            line-height:2.8rem ;
+            padding-right: 2rem;
+        }
+        .is{
+            color: hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding-right: 2rem;
+        }
+        .private{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.5rem;
+            line-height: 2.8rem;
+            padding-bottom: 3rem;
+            padding-right: 2rem;
+        }
+        
+    }
+    @media screen and (max-width:412px) {
+        .logo{
+            margin-left: -1rem;
+        }
+        .reviving{
+            font-size: 1.5rem;
+        }
+      
+    }
+    @media screen and (max-width:410px){
+        .logo{
+            margin-left: -2rem;
+        }
+    }
+    @media screen and (max-width:411px) {
+        .our{
+            font-size: 1.5rem;
+        }
+    }
+    @media screen and (max-width:411px) {
+        .image{
+            width: 37rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.4rem;
+        }
+         
+          .reviving{
+            font-size: 1.3rem;
+          } 
+         
+          h1{
+            margin-left: 2.5rem;
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:hsl(240, 100%, 5%);
+            line-height: 4rem;
+        }
+        h2{
+            margin-left: 2.5rem;
+            margin-top: 2rem;
+            font-size: 1.7rem;
+           width: 31rem;
+            height: 20%;
+            color: hsl(236, 13%, 42%);
+            line-height: 2.5rem;
+        }
+        .button-div{
+            margin-top: 3rem;
+            margin-left: 2rem;
+        }
+        
+    }
+    @media screen and (max-width:410px) {
+        .image{
+            width: 36rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.4rem;
+            
+          }
+          .flexar-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-left: 2rem;
+        }
+       
+        .flexarr-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-left: 2rem;
+        }
+        .flexarrr-container{
+            margin-left: 2rem;
+        }
+          
+        
+        h3{
+            font-size: 3rem;
+        color: hsl(35, 77%, 62%);
+            padding-top: 3rem;
+            padding-left: 2rem;
+        }
+        
+        
+    }
+    @media screen and (max-width:408px) {
+        .flexar-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 7rem;
+            margin-left: 2rem;
+           
+        }
+        .flexarrr-container{
+            margin-left: 2rem;
+        }
+        .flexarr-container{
+            margin-left: 2rem;
+        }
+        
+          
+          h1{
+            margin-left: 2.4rem;
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+            color:hsl(240, 100%, 5%);
+        }
+        h2{
+            margin-left: 2.4rem;
+            margin-top: 2rem;
+            font-size: 1.4rem;
+           width: 31rem;
+            height: 20%;
+            color: hsl(236, 13%, 42%);
+            line-height: 2rem;
+        }
+        
+    }
+    @media screen and (max-width:405px) {
+        
+        
+    }
+    @media screen and (max-width:400px) {
+        .image{
+            width: 35rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.4rem;
+            
+          }
+          h1{
+            font-size: 2rem;
+            line-height: 2.5rem;
+          }
+        
+    }
+    @media screen and (max-width:394px) {
+       .box-1{
+        margin-left: 2.5rem;
+       }
+        h3{
+            font-size: 2.7rem;
+        color: hsl(35, 77%, 62%);
+            padding-top: 3rem;
+            padding-left: 2rem;
+        }
+        .hydrogen{
+            font-size: 2rem;
+            color:hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            font-weight: 700;
+        }
+        .will{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 1.8rem;
+            font-size: 1.8rem;
+            padding-right: 2rem;
+            line-height: 3rem;
+        }
+        .flexar-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 7rem;
+            margin-left: 3rem;
+           
+        }
+        .flexarrr-container{
+            margin-left: 3rem;
+        }
+        .flexarr-container{
+            margin-left: 3rem;
+        }
+        aside{
+            border-bottom: 1px solid hsl(233, 8%, 79%);
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .the{
+            color: hsl(36, 100%, 99%);
+            font-size: 2em;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            font-weight: 700;
+        }
+        .what{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.8rem;
+            line-height:2.8rem ;
+        }
+        .is{
+            color: hsl(36, 100%, 99%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .private{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2rem;
+            padding-top: 2rem;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            padding-bottom: 3rem;
+        }
+    }
+    @media screen and (max-width:394px) 
+    {
+        .image{
+            width: 34.5rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.1rem;
+            
+          }
+          
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:86%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 86%
+}
+        
+    }
+    @media screen and ( max-width:386px) {
+        .container{
+            overflow-x: hidden;
+        }
+        .image{
+            width: 34rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.1rem;
+            
+          }
+          .happens{
+            font-size: 1.3rem;
+          }
+          .box-1{
+            width: max-content;
+            height: 60%;
+            background-color: hsl(240, 100%, 5%);
+            margin-top: 5rem;
+            margin-left: 2rem;
+          }  
+    }
+    @media screen and (max-width:378px) {
+        .happens{
+            font-size: 1.2rem;
+        }
+        .image{
+            width: 33rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.1rem;
+            
+          }
+          .box-1{
+            margin-left: 1.4rem;
+          }
+        
+    }  
+    @media screen and (max-width:370px) {
+        .image{
+            width: 32.3rem;
+        }
+        .numberss{
+            margin-left: -3rem;
+        }
+        .how{
+            margin-left: -3rem;
+        }
+        .ther{
+            margin-left: -3rem;
+        }
+    }
+    @media screen and (max-width:369px) {
+        .image{
+            width: 32.7rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.1rem;
+            
+          }
+          
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:86%
+    }
+    .mob-open{
+        width: 30px;
+        height: 30px;
+        left: 86%
+}
+.box-1{
+    margin-left: 2.7rem;
+}
+.hydrogen{
+    font-size: 1.8rem;
+    color:hsl(36, 100%, 99%);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    font-weight: 700;
+    padding-right: 2rem;
+}
+.will{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    line-height: 3rem;
+    padding-right: 2rem;
+}
+aside{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.the{
+    color: hsl(36, 100%, 99%);
+    font-size: 1.7rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-weight: 700;
+    padding-right: 2rem;
+}
+.what{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    line-height:2.8rem ;
+    padding-right: 2rem;
+}
+.is{
+    color: hsl(36, 100%, 99%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-right: 2rem;
+}
+.private{
+    color: hsl(233, 8%, 79%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+}
+
+
+        
+    }
+    @media screen and (max-width:366px) {
+        .image{
+            width: 32.3rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.1rem;
+            
+          }
+          .box-1{
+            margin-left: 2.3rem;
+          }
+
+        
+    }
+    @media screen and (max-width:361px) {
+        .image{
+            width: 32rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 2.1rem;
+            
+          }
+        
+    }
+@media screen and (max-width:360px) {
+    .image{
+        width: 31.8rem;
+    }
+    
+}
+@media screen and (max-width:358px) {
+    .image{
+        width: 31.6rem;
+    }
+    .happens{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width:353px) {
+    .image{
+        width: 31rem;
+    }
+    .box-1{
+        margin-left: 2.6rem;
+    }
+    
+    
+}
+@media screen and (max-width:351px){
+    .box-1{
+        margin-left: 1.8rem;
+    }
+    .image{
+        width: 30.8rem;
+    }
+}
+@media screen and (max-width:348px) {
+    .image{
+        width: 30.6rem;
+    }
+    .box-1{
+        margin-left: 1.6rem;
+    }
+    
+}
+@media screen and (max-width:345px) {
+    .image{
+        width: 30.2rem;
+    }
+    .box-1{
+        margin-left: 1.4rem;
+    }
+
+    
+}
+@media screen and (max-width:340px) {
+    .box-1{
+        margin-left: 1.2rem;
+    }
+
+    
+}
+    @media screen  and (min-width:500px)and (max-width:760px){
+        .header,
+        .header-background{
+            display: none;
+        }
+      .logo-wrapper{
+        display: block;
+      }
+      body{
+        background-color: hsl(233, 8%, 79%);
+      }
+      .logo{
+        margin-left: -7rem;
+        padding-top: 7rem;
+        position: absolute;
+        top: -2rem;
+        left: 14rem;
+      }
+    .container{
+        overflow: hidden;
+    }
+    
+    .mob-open{
+        width: 30px;
+        height: 30px;
+    }
+    .mob-list{
+        height: 100%;
+        width: 55%;
+        position: fixed;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+        justify-content: center;
+        gap: 35px;
+        background-color:hsl(36, 100%, 99%);
+    
+    }
+    .mob-list-item{
+        color: hsl(240, 100%, 5%);
+        font-size:3rem;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+    }
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:80%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 80%;
+        margin-top: 4rem;
+    }
+    .opened{
+        opacity: 1;
+    }
+    .close{
+        opacity:0 ;
+    }
+    .div-1{
+        margin-top: 6rem;
+    }
+    .div-2{
+        width: 50%;
+        height: 100%;
+        margin-left: 18rem;
+        margin-top: 9rem;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .div-1{
+        width: 65rem;
+        height: 50%;
+    }
+    .image{
+        width: 55rem;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 16rem;
+        margin-top: 3rem;
+        background-image: url(./assets/images/image-web-3-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .image{
+        width: 55rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+    .div-2{
+        width: 50%;
+        height: 100%;
+        margin-left: 18rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-left: 8rem;
+        margin-top: 2rem;
+        font-size: 6rem;
+        font-weight: 700;
+        color:hsl(240, 100%, 5%);
+    }
+    h2{
+        margin-left: 8rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+       width: 50rem;
+        height: 20%;
+        color: hsl(236, 13%, 42%);
+        line-height: 4rem;
+    }
+    .button-div{
+        margin-top: 3rem;
+        margin-left: 8rem;
+    }
+    button{
+        width: 100%;
+        font-size: 2rem;
+        padding: 1.5rem;
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        color: hsl(36, 100%, 99%);
+        letter-spacing: 0.3rem;
+    }
+    button:hover{
+        background-color: hsl(240, 100%, 5%);
+        transition: all 0.3s;
+    }
+      .box-1{
+        width: max-content;
+        height: 60%;
+        background-color: hsl(240, 100%, 5%);
+        margin-top: 5rem;
+        margin-left: -10rem;
+      }  
+    
+    h3{
+        font-size: 12rem;
+    color: hsl(35, 77%, 62%);
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+    .hydrogen{
+        font-size: 3.8rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 2rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 1.6rem;
+        font-size: 3.2rem;
+        padding-right: 2rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 3.8rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 2rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 3.2rem;
+        line-height:5rem ;
+        padding-right: 2rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
+        padding-right: 2rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+    }
+    .flexar-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 7rem;
+        margin-left: 8rem;
+       
+    }
+    .div-10{
+        width: 40%;
+        height: 30%;
+    
+    }
+    
+    .number{
+        font-size: 6rem;
+        color: hsl(236, 13%, 42%);
+        margin-left: -8rem;
+    }
+    .div-9{
+        width: 60%;
+        height: 30%;
+        margin-right:5rem ;
+    }
+    .imager{
+        height: 18rem;
+    }
+    .reviving{
+        font-size: 2.8rem;
+        padding-top: 1.5rem;
+        font-weight: 700;
+        color: hsl(240, 100%, 5%);
+        font-weight: 700;
+        margin-left: -8rem;
+    }
+    .happens{
+        font-size: 2.5rem;
+        padding-top: 1.7rem;
+        line-height: 2.6rem;
+        color: hsl(236, 13%, 42%);
+        margin-left: -8rem;
+    }
+    .flexarr-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 5rem;
+        margin-left: 8rem;
+    }
+    .div-12{
+        width: 40%;
+        height: 30%;
+        margin-right: -3rem;
+    }
+    .numbers{
+        font-size: 6rem;
+        color:hsl(236, 13%, 42%);
+        margin-left: -8rem;
+    }
+    .top{
+        font-size: 2.8rem;
+        padding-top: 1.5rem;
+        font-weight: 700;
+        color: hsl(240, 100%, 5%);
+        font-weight: 700;
+        margin-left: -8rem;
+    }
+    .our{
+            font-size: 2.5rem;
+            padding-top: 1.8rem;
+            line-height: 2.6rem;
+            color: hsl(236, 13%, 42%);
+            margin-left: -8rem;
+        }
+        .flexarrr-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-left: 8rem;
+        }
+        .div-14{
+            width: 40%;
+            height: 30%;
+            margin-right: 1rem;
+        }
+        .numberss{
+            font-size: 6rem;
+            color: hsl(236, 13%, 42%);
+            margin-left: -13rem;
+        }
+        .ther{
+            font-size: 2.8rem;
+            padding-top: 1.5rem;
+            font-weight: 700;
+            font-weight: 700;
+            color: hsl(240, 100%, 5%);
+            margin-left: -13rem;
+        }
+        .how{
+            font-size: 2.5rem;
+            padding-top: 1.8rem;
+            line-height: 2.6rem;
+            color: hsl(236, 13%, 42%);
+            padding-bottom: 7rem;
+            margin-left: -13rem;
+    
+        }
+    }
+
+@media screen and (min-width:500px) and (max-width:730px) {
+    .number{
+        margin-left: -4rem;
+    }
+    .numbers{
+        margin-left: -4rem;
+    }
+    .numberss{
+        margin-left: -9rem;
+    }
+    .reviving{
+        margin-left: -4rem;
+    }
+    .happens{
+        margin-left: -4rem;
+    }
+    .top{
+        margin-left: -4rem;
+    }
+    .our{
+        margin-left: -4rem;
+    }
+    .ther{
+        margin-left: -9rem;
+    }
+    .how{
+        margin-left: -9rem;
+    }
+    
+}
+@media screen and (min-width:500px) and (max-width:710px){
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:84%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 84%;
+        margin-top: 4rem;
+    }
+
+}
+@media screen and (min-width:500px) and (max-width:700px) {
+    
+    .box-1{
+        width: max-content;
+        height: 60%;
+        background-color: hsl(240, 100%, 5%);
+        margin-top: 5rem;
+        margin-left: -10rem;
+      }  
+    
+    h3{
+        font-size: 7rem;
+    color: hsl(35, 77%, 62%);
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+    .hydrogen{
+        font-size: 3rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 2rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 1.6rem;
+        font-size: 2.8rem;
+        padding-right: 2rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 2rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.8rem;
+        line-height:5rem ;
+        padding-right: 2rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 3rem;
+        font-weight: bold;
+        padding-right: 2rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.7rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:700px) {
+    .image{
+        width: 54rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .box-1{
+        width: max-content;
+        height: 60%;
+        background-color: hsl(240, 100%, 5%);
+        margin-top: 5rem;
+        margin-left: -8rem;
+      }  
+}
+@media screen and (min-width:500px) and (max-width:688px) {
+    .image{
+        width: 53rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      button{
+        width: 70%;
+      }
+      .box-1{
+        width: max-content;
+        height: 60%;
+        background-color: hsl(240, 100%, 5%);
+        margin-top: 5rem;
+        margin-left: -10rem;
+      }  
+    
+    h3{
+        font-size: 4rem;
+    color: hsl(35, 77%, 62%);
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+    .hydrogen{
+        font-size: 3rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 3rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.2rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 3rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        line-height:5rem ;
+        padding-right: 3rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 3.1rem;
+        font-weight: bold;
+        padding-right: 3rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+    }
+    .numberss{
+        margin-left: -9rem;
+        
+    }
+    .how{
+        margin-left: -9rem;
+    }
+    .ther{
+        margin-left: -9rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:670px) {
+    .image{
+        width: 51rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .hydrogen{
+        font-size: 3rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 3rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.2rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+        font-weight: 700;
+        padding-right: 3rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        line-height:5rem ;
+        padding-right: 3rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 3.1rem;
+        font-weight: bold;
+        padding-right: 3rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:650px) {
+    .image{
+        width: 50rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .hydrogen{
+        font-size: 2.8rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 3rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.8rem;
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+        font-weight: 700;
+        padding-right: 3rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        line-height:5rem ;
+        padding-right: 3rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.9rem;
+        font-weight: bold;
+        padding-right: 3rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.3rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+    }
+
+    
+}
+@media screen and (min-width:500px) and (max-width:650px) {
+    .image{
+        width: 48rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:84%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 84%;
+        margin-top: 4rem;
+    }
+    
+
+    h1{
+        font-size: 3.8rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    .number{
+        font-size: 2.8rem;
+        
+    }
+    .happens{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .our{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .reviving{
+        font-size: 2.5rem;
+    }
+    .top{
+        font-size: 2.5rem;
+    }
+    .ther{
+        font-size: 2.5rem;
+       
+    }
+    .will{
+        font-size:2.2rem ;
+    }
+    .numbers{
+        font-size: 3rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .numberss{
+        font-size: 3rem;
+    }
+    .how{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    
+}
+    @media screen and (min-width:500px) and (max-width:648px) {
+        .how{
+            font-size: 1.6rem;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        h2{
+            font-size: 1.4rem;
+            width: 60%;
+        }
+        .image{
+            width: 47rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 8rem;
+            
+          }
+          .numberss{
+            margin-left: -8rem;
+          }
+          .ther{
+            margin-left: -8rem;
+          }
+          .how{
+            margin-left: -8rem;
+          }
+      
+    }
+    @media screen and (min-width:500px) and (max-width:642px) {
+        .image{
+            width: 48rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 8rem;
+            
+          }
+          .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:82%;
+            margin-top: 4rem;
+        }
+        .mob-open{
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            z-index: 5;
+            left: 82%;
+            margin-top: 4rem;
+        }
+    }
+    @media screen and (min-width:500px) and (max-width:639px){
+        .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:84%;
+            margin-top: 4rem;
+        }
+        .mob-open{
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            z-index: 5;
+            left: 84%;
+            margin-top: 4rem;
+        }
+        .hydrogen{
+            font-size: 3rem;
+            color:hsl(36, 100%, 99%);
+            padding-left: 2.5rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            font-weight: 700;
+            padding-right: 3rem;
+        }
+        .will{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.2rem;
+            padding-right: 3rem;
+            line-height: 5rem;
+        }
+        aside{
+            border-bottom: 1px solid hsl(233, 8%, 79%);
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .the{
+            color: hsl(36, 100%, 99%);
+            font-size: 3rem;
+            padding-top: 2rem;
+            padding-left: 2.5rem;
+            font-weight: 700;
+            padding-right: 3rem;
+        }
+        .what{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.6rem;
+            line-height:5rem ;
+            padding-right: 3rem;
+        }
+        .is{
+            color: hsl(36, 100%, 99%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 3.1rem;
+            font-weight: bold;
+            padding-right: 3rem;
+        }
+        .private{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.6rem;
+            line-height: 4rem;
+            padding-bottom: 3rem;
+            padding-right: 3rem;
+        }
+        
+        
+    }
+    @media screen and (min-width:500px) and (max-width:634px) {
+        .hydrogen{
+            font-size: 2.9rem;
+            color:hsl(36, 100%, 99%);
+            padding-left: 2.5rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            font-weight: 700;
+            padding-right: 4rem;
+        }
+        .will{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.2rem;
+            padding-right: 3rem;
+            line-height: 5rem;
+        }
+        aside{
+            border-bottom: 1px solid hsl(233, 8%, 79%);
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 2rem;
+        }
+        .the{
+            color: hsl(36, 100%, 99%);
+            font-size: 2.8rem;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            font-weight: 700;
+            padding-right: 4rem;
+        }
+        .what{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.3rem;
+            line-height:5rem ;
+            padding-right: 4rem;
+        }
+        .is{
+            color: hsl(36, 100%, 99%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.8rem;
+            font-weight: bold;
+            padding-right: 4rem;
+        }
+        .private{
+            color: hsl(233, 8%, 79%);
+            padding-left: 2.5rem;
+            padding-top: 2rem;
+            font-size: 2.3rem;
+            line-height: 4rem;
+            padding-bottom: 3rem;
+            padding-right: 4rem;
+        }
+        
+    }
+    @media screen and (min-width:500px) and (max-width:631px) {
+        .image{
+            width: 47rem;
+            height: 40%;
+            margin-top: 8rem;
+            margin-left: 8rem;
+            
+          }
+          .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:83%;
+            margin-top: 4rem;
+        }
+        .mob-open{
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            z-index: 5;
+            left: 83%;
+            margin-top: 4rem;
+        }
+
+    }
+    @media screen and (min-width:500px) and (max-width:625px) {
+        
+          .mob-close{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            left:83%;
+            margin-top: 4rem;
+        }
+        .mob-open{
+            position: absolute;
+            right: 30px;
+            top: 19px;
+            z-index: 5;
+            left: 83%;
+            margin-top: 4rem;
+        }
+
+        
+    }
+@media screen and (min-width:500px) and (max-width:613px) {
+    .image{
+        width: 46rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      h1{
+        line-height: 5rem;
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:83%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 83%;
+        margin-top: 4rem;
+    }    
+}
+@media screen and (min-width:500px) and (max-width:601px) {
+    .image{
+        width: 44rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:81%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 81%;
+        margin-top: 4rem;
+    }    
+     
+}
+
+@media screen and (min-width:500px) and (max-width:598px) {
+    .number{
+        margin-left: -2rem;
+    }
+    .reviving{
+        margin-left: -2rem;
+    }
+    .happens{
+        margin-left: -2rem;
+    }
+    .numbers{
+        margin-left: -2rem;
+    }
+    .top{
+        margin-left: -2rem;
+    }
+    .our{
+        margin-left: -2rem;
+    }
+    .numberss{
+        margin-left: -6rem;
+    }
+    .ther{
+        margin-left: -6rem;
+    }
+    .how{
+        margin-left: -6rem;
+    }
+    
+}
+@media screen and (min-width:500px) and (max-width:593px) {
+    .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:83%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 83%;
+        margin-top: 4rem;
+    } 
+}
+@media screen and (min-width:500px) and (max-width:581px) {
+    .image{
+        width: 42rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:81%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 81%;
+        margin-top: 4rem;
+    }
+    .hydrogen{
+        font-size: 2.6rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.6rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.1rem;
+        line-height:5rem ;
+        padding-right: 4rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        font-weight: bold;
+        padding-right: 4rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.1rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 4rem;
+    }
+    
+
+}
+@media screen and (min-width:500px) and (max-width:567px) {
+    .image{
+        width: 40rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:80%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 80%;
+        margin-top: 4rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:550px) {
+    .hydrogen{
+        font-size: 2.6rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.6rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.1rem;
+        line-height:5rem ;
+        padding-right: 4rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.6rem;
+        font-weight: bold;
+        padding-right: 4rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.1rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 4rem;
+    }
+    
+    
+}
+@media screen and (min-width:500px) and (max-width:548px) {
+    .image{
+        width: 38rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:78%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 78%;
+        margin-top: 4rem;
+    }
+    .hydrogen{
+        font-size: 2.4rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.4rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.9rem;
+        line-height:5rem ;
+        padding-right: 4rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-right: 4rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.9rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 4rem;
+    }
+    .number{
+        margin-left: 1rem;
+    }
+    .happens{
+        margin-left: 1rem;
+    }
+    .reviving{
+        margin-left: 1rem;
+    }
+    .numbers{
+        margin-left: 1rem;
+    }
+    .top{
+        margin-left: 1rem;
+    }
+    .our{
+        margin-left: 1rem;
+    }
+    .numberss{
+        margin-left: -2rem;
+    }
+    .ther{
+        margin-left: -2rem;
+    }
+    .how{
+        margin-left: -2rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:538px) {
+    .image{
+        width: 38rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:81%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 81%;
+        margin-top: 4rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:535px) {
+    .happens{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:520px) {
+    .image{
+        width: 35rem;
+        height: 40%;
+        margin-top: 8rem;
+        margin-left: 8rem;
+        
+      }
+      .mob-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        left:77%;
+        margin-top: 4rem;
+    }
+    .mob-open{
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        z-index: 5;
+        left: 77%;
+        margin-top: 4rem;
+    }
+    .hydrogen{
+        font-size: 2.2rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        padding-right: 3rem;
+        line-height: 5rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .the{
+        color: hsl(36, 100%, 99%);
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 4rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.7rem;
+        line-height:5rem ;
+        padding-right: 4rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding-right: 4rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-size: 1.7rem;
+        line-height: 4rem;
+        padding-bottom: 3rem;
+        padding-right: 4rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:518px) {
+    .reviving{
+        font-size: 2.1rem;
+    }
+    .ther{
+        font-size: 2rem;
+    }
+    .top{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:760px) {
+    .logo{
+        margin-left: -7rem;
+        padding-top: 6rem;
+        position: absolute;
+        top: -4rem;
+        left: 10rem;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: row;
+      }
+      .image{
+        width: 33rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 3rem;
+      }
+      .div-1{
+        width: 60%;
+        height: 100%;
+      }
+    .div-2{
+        width: 40%;
+        height: 100%;
+    }
+
+    .button-div{
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+    button{
+        font-size: 2rem;
+        padding: 1.5rem;
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        color: hsl(36, 100%, 99%);
+        letter-spacing: 0.3rem;
+    }
+    button:hover{
+        background-color: hsl(240, 100%, 5%);
+        transition: all 0.3s;
+    }
+      .box-1{
+        width: max-content;
+        height: 60%;
+        background-color: hsl(240, 100%, 5%);
+        margin-top: 2rem;
+        margin-left: -7rem;
+      }  
+      h3{
+        font-size: 3.4rem;
+    color: hsl(35, 77%, 62%);
+        padding-top: 3rem;
+        padding-left: 2rem;
+    }
+    .hydrogen{
+        font-size: 2rem;
+        color:hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        padding-right: 2rem;
+    }
+    .will{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 1.8rem;
+        font-size: 1.6rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+        padding-right: 2rem;
+    }
+    aside{
+        border-bottom: 1px solid hsl(233, 8%, 79%);
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        padding-right: 2rem;
+    }
+    .the{
+        color: hsl(35, 77%, 62%);
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        padding-right: 2rem;
+    }
+    .what{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        line-height:2.8rem ;
+        padding-right: 2rem;
+    }
+    .is{
+        color: hsl(36, 100%, 99%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-right: 2rem;
+    }
+    .private{
+        color: hsl(233, 8%, 79%);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding-bottom: 3rem;
+        padding-right: 2rem;
+    }
+    .flexe-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    h1{
+        margin-left: 2rem;
+        margin-top: 6rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color:hsl(240, 100%, 5%);
+        line-height: 2.5rem;
+    }
+    h2{
+        margin-left: -1rem;
+        margin-top: 6rem;
+        font-size: 1.1rem;
+       width: 25rem;
+        height: 20%;
+        color: hsl(236, 13%, 42%);
+        line-height: 2rem;
+    }
+    .button-div{
+        margin-top: 7rem;
+        margin-left: -1rem;
+    }
+    button{
+        font-size: 2rem;
+        padding: 1.5rem;
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        color: hsl(36, 100%, 99%);
+        letter-spacing: 0.3rem;
+    }
+    button:hover{
+        background-color: hsl(240, 100%, 5%);
+        transition: all 0.3s;
+    }
+    
+    .imager{
+        height: 12rem;
+        width: 10rem;
+    }    
+        .flexwrap-container{
+            display: flex;
+            margin-top: 4rem;
+        }
+        .flexar-container{
+            width: 33.3%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+            
+        }
+        .flexarr-container {
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
+        .flexarrr-container{
+            width: 33.3%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
+        .number{
+            font-size: 3rem;
+            margin-left: 2rem;
+            color: hsl(236, 13%, 42%);
+        }
+        .reviving{
+            margin-left: 2rem;
+            font-size: 1.3rem;
+            padding-top: 1.3rem;
+            color: hsl(240, 100%, 5%);
+            font-weight: 700;
+        }
+        .happens{
+            margin-left: 2rem;
+            font-size: 1.3rem;
+            padding-top: 1rem;
+           color: hsl(236, 13%, 42%);
+        }
+        
+        .numbers{
+            font-size: 3rem;
+            margin-left: 2rem;
+            color: hsl(236, 13%, 42%);
+        }
+        .top{
+            margin-left: 2rem;
+            font-size: 1rem;
+            padding-top: 1.3rem;
+            color: hsl(240, 100%, 5%);
+            font-weight: 700;
+        }
+        .our{
+            margin-left: 2rem;
+            font-size: 1.2rem;
+            padding-top: 1rem;
+           color: hsl(236, 13%, 42%);
+        }
+        .top:hover{
+            color: hsl(5, 85%, 63%);
+            transition: all 0.3s ;
+        }
+      
+        .numberss{
+            font-size: 3rem;
+            margin-left: 2rem;
+            color: hsl(236, 13%, 42%);
+        }
+        .ther{
+            margin-left: 2rem;
+            font-size: 1rem;
+            padding-top: 1.3rem;
+            color: hsl(240, 100%, 5%);
+            font-weight: 700;
+        }
+        .how{
+            margin-left: 2rem;
+            font-size: 1.3rem;
+            padding-top: 1rem;
+           color: hsl(236, 13%, 42%);
+    }
+}
+@media screen and (min-width:820px){
+    .logo{
+        margin-left: -7rem;
+        padding-top: 6rem;
+        position: absolute;
+        top: -4rem;
+        left: 12rem;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: row;
+      }
+      .image{
+        width: 35rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 5rem;
+      }
+      h1{
+        margin-left: 5rem;
+        margin-top: 6rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color:hsl(240, 100%, 5%);
+        line-height: 2.5rem;
+    }
+    h2{
+        margin-left: -1rem;
+        margin-top: 6rem;
+        font-size: 1.1rem;
+       width: 25rem;
+        height: 20%;
+        color: hsl(236, 13%, 42%);
+        line-height: 2rem;
+    }
+    .button-div{
+        margin-top: 7rem;
+        margin-left: -1rem;
+    }
+
+}
+@media screen and (min-width:830px) {
+    .image{
+        width: 35rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+    .logo{
+        margin-left: -6rem;
+    }
+    h1{
+        margin-left: 6rem;
+        margin-top: 6rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color:hsl(240, 100%, 5%);
+        line-height: 2.5rem;
+    }
+    h2{
+        margin-left: 1rem;
+        margin-top: 6rem;
+        font-size: 1.1rem;
+       width: 25rem;
+        height: 20%;
+        color: hsl(236, 13%, 42%);
+        line-height: 2rem;
+    }
+    .button-div{
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width:870px) {
+    .image{
+        width: 35.7rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+    
+}
+@media screen and (min-width:880px) {
+    .image{
+        width: 37rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+    
+}
+@media screen and (min-width:900px) {
+    .image{
+        width: 37.6rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+      .reviving{
+        font-size: 1.7rem;
+      }
+      .top{
+        font-size: 1.5rem;
+      }
+      .ther{
+        font-size: 1.5rem;
+      }
+    
+}
+@media screen and (min-width:910px) {
+    .image{
+        width: 39rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+
+    
+}
+@media screen  and (min-width:930px){
+    .image{
+        width: 40.4rem;
+        height: 23rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+      h1{
+        margin-left: 6rem;
+        margin-top: 6rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color:hsl(240, 100%, 5%);
+        line-height: 3rem;
+    }
+    h2{
+        margin-left: 1rem;
+        margin-top: 6rem;
+        font-size: 1.1rem;
+       width: 25rem;
+        height: 20%;
+        color: hsl(236, 13%, 42%);
+        line-height: 2rem;
+    }
+    .button-div{
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
+
+    
+}
+@media screen and (min-width:962px) {
+    h3{
+        font-size: 5rem;
+    }
+    .hydrogen{
+        font-size: 3rem;
+    }
+    .will{
+        font-size: 2rem;
+    }
+    .the{
+        font-size: 2.6rem;
+        color: hsl(35, 77%, 62%);
+    }
+    .what{
+        font-size: 2rem;
+    }
+    .is{
+        font-size: 2.6rem;
+    }
+    .private{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 2.6rem;
+        line-height: 4rem;
+    }
+    h2{
+        margin-left: -1rem;
+        font-size: 1rem;
+    }
+    .button-div{
+        margin-left: -1rem;
+    }
+}
+@media screen and (min-width:970px) {
+    .image{
+        width: 41.5rem;
+        height: 26rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+    h1{
+        margin-top: 7rem;
+    }
+    h2{
+        margin-top: 8rem;
+    }
+    .how{
+        padding-bottom: 6rem;
+    }
+}
+@media screen  and (min-width:992px){
+    h2{
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        line-height: 3rem;
+    }
+    .button-div{
+        margin-left: 1rem;
+    }
+    
+}   
+
+@media screen and (min-width:1000px) {
+    .image{
+        width: 43rem;
+        height: 26rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+h1{
+    font-size: 2.8rem;
+}
+    
+}
+@media screen  and (min-width:1010px){
+    .image{
+        width: 44rem;
+        height: 26rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+      .happens{
+        line-height: 1.8rem;
+      }
+      .our{
+        line-height: 1.8rem;
+      }
+      .how{
+        line-height: 1.8rem;
+      }
+    
+}
+@media screen and (min-width:1022px) {
+    .ther{
+        font-size: 1.7rem;
+    }
+    
+}
+@media screen and (min-width:1032px){
+    .image{
+        width: 45rem;
+        height: 26rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+      }
+
+}
+@media screen and (min-width:1035px) {
+.image{
+    width: 46rem;
+    height: 26rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+h2{
+    margin-left: 2rem;
+}
+.button-div{
+    margin-left: 2rem;
+}
+h1{
+    font-size: 3rem;
+}
+}
+@media screen and (min-width:1046px) {
+   .reviving{
+    font-size: 2rem;
+   }
+  .top{
+    font-size: 2rem;
+  }
+    h3{
+        font-size: 6rem;
+    }
+    .hydrogen{
+        font-size: 3.3rem;
+    }
+    .will{
+        font-size: 2.2rem;
+    }
+    .the{
+        font-size: 2.8rem;
+        color: hsl(35, 77%, 62%);
+    }
+    .what{
+        font-size: 2.2rem;
+    }
+    .is{
+        font-size: 2.8rem;
+    }
+    .private{
+        font-size: 2.2rem;
+    }
+    .button-div{
+        margin-top: 9rem;
+    }
+}    
+@media screen and (min-width:1052px) {
+    .image{
+        width: 47rem;
+        height: 26rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+}
+@media screen and (min-width:1075px) {
+    .image{
+        width: 48rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (min-width:1086px) {
+    .how{
+        font-size: 1.7rem;
+    }
+    .our{
+        font-size: 1.7rem;
+    }
+    .happens{
+        font-size: 1.7rem;
+    }
+    
+}
+@media  screen and (min-width:1093px) {
+    .image{
+        width: 49rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen and (min-width:1100px) {
+    .image{
+        width: 50rem;
+        height: 29rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen and (min-width:1116px){
+    .image{
+        width: 51rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+
+}
+@media screen  and (min-width:1130px){
+    h3{
+        font-size: 7rem;
+    }
+    .hydrogen{
+        font-size: 3.5rem;
+    }
+    .will{
+        font-size: 2.4rem;
+    }
+    .the{
+        font-size: 3rem;
+        color: hsl(35, 77%, 62%);
+    }
+    .what{
+        font-size: 2.4rem;
+    }
+    .is{
+        font-size: 3rem;
+    }
+    .private{
+        font-size: 2.4rem;
+    }
+    
+}
+@media screen and (min-width:1142px) {
+    .image{
+        width: 52rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h1{
+        line-height: 4rem;
+    }
+}
+@media screen and (min-width:1152px) {
+    .image{
+        width: 53rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen  and (min-width:1163px){
+    .image{
+        width: 54rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen  and (min-width:1180px){
+    .image{
+        width: 55rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+@media screen and (min-width:1200px) {
+    .image{
+        width: 55rem;
+        height: 30rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h3{
+        font-size: 8rem;
+    }
+    .hydrogen{
+        font-size: 3.8rem;
+    }
+    .will{
+        font-size: 2.4rem;
+    }
+    .the{
+        font-size: 3.6rem;
+        color: hsl(35, 77%, 62%);
+    }
+    .what{
+        font-size: 2.4rem;
+    }
+    .is{
+        font-size: 3.6rem;
+    }
+    .private{
+        font-size: 2.4rem;
+    }
+   .button-div{
+    margin-top: 12rem;
+   }
+   h1{
+    margin-top: 8rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
+   }
+   h2{
+    margin-top: 8rem;
+    margin-left: 2rem;
+   }
+}
+@media screen and (min-width:1211px) {
+    .image{
+        width: 56rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen and (min-width:1226px) {
+    .image{
+        width: 57rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen and (min-width:1240px) {
+.image{
+    width: 58rem;
+    height: 28rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}}
+@media screen and (min-width:1251px){
+    .image{
+        width: 59rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (min-width:1257) {
+    .image{
+        width: 60rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+h1{
+    font-size: 7rem;
+}    
+h2{
+    margin-left: 6rem;
+}
+}
+@media screen and (min-width:1277px) {
+    .image{
+        width: 61rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h2{
+        margin-left: 4rem;
+    }
+    .button-div{
+        margin-left: 4rem;
+    }
+    h1{
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+}
+@media screen and (min-width:1300px) {
+    .hydrogen{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 7rem;
+    }
+    .will{
+        font-size: 2.6rem;
+    }
+    .the{
+        font-size: 3.8rem;
+        color: hsl(35, 77%, 62%);
+    }
+    .what{
+        font-size: 2.6rem;
+    }
+    .is{
+        font-size: 3.8rem;
+    }
+    .private{
+        font-size: 2.6rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    
+}
+@media screen and (min-width:1317px) {
+    .image{
+        width: 62rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+}
+@media screen and (min-width:1337px) {
+    .image{
+        width: 63rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    h2{
+        margin-left: 7rem;
+    }
+    .button-div{
+        margin-left: 7rem;
+    }
+}
+@media screen and (min-width:1351px) {
+    .image{
+        width: 64rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    .hydrogen{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 8rem;
+    }
+    .will{
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .the{
+        font-size: 4rem;
+        color: hsl(35, 77%, 62%);
+    }
+    .what{
+        font-size: 2.6rem;
+        line-height: 4rem;}
+    .is{
+        font-size: 3.8rem;
+    }
+    .private{
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .button-div{
+        margin-top: 14rem;
+    }
+}
+@media screen and (min-width:1371px) 
+{
+    .image{
+        width: 65rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
+@media screen and (min-width:1382px) {
+    .image{
+        width: 66rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+
+    
+}
+@media screen  and (min-width:1407px){
+    .image{
+        width: 67rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    } 
+    .number{
+        font-size:3rem;
+    }   
+}
+@media screen and (min-width:1422px) {
+    .image{
+        width: 69rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+}
